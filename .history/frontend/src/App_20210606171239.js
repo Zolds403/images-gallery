@@ -35,7 +35,7 @@ const App = () => {
       <Header title="Images Gallery" />
       <Search word={word} setWord={setWord} handleSubmit={handleSearchSubmit} />
       {images.map((image, i) => (
-        <ImageCard key={i} image={image} />
+        <ImageCard image={image} />
       ))}
     </div>
   );
