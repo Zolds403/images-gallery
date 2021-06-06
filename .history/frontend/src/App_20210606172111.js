@@ -35,11 +35,11 @@ const App = () => {
     <div>
       <Header title="Images Gallery" />
       <Search word={word} setWord={setWord} handleSubmit={handleSearchSubmit} />
-      <Container className="mt-4">
+      <Container>
         <Row xs={1} md={2} lg={3}>
           {images.map((image, i) => (
-            <Col key={i} className="pb-3">
-              <ImageCard image={image} />
+            <Col>
+              <ImageCard key={i} image={image} />
             </Col>
           ))}
         </Row>
