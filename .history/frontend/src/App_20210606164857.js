@@ -34,7 +34,7 @@ const App = () => {
     <div>
       <Header title="Images Gallery" />
       <Search word={word} setWord={setWord} handleSubmit={handleSearchSubmit} />
-      {!!images.length && <ImageCard image={images[0]} />}
+      <ImageCard></ImageCard>
     </div>
   );
 };

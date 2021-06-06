@@ -15,13 +15,14 @@ const App = () => {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
+
     console.log(word);
     fetch(
       `https://api.unsplash.com/photos/random/?query=${word}&client_id=${UNSPLASH_KEY}`
     )
       .then((res) => res.json())
       .then((data) => {
-        setImages([{ ...data, title: word }, ...images]);
+        setImages([data, ...images]);
       })
       .catch((err) => {
         console.log(err);
@@ -34,7 +35,7 @@ const App = () => {
     <div>
       <Header title="Images Gallery" />
       <Search word={word} setWord={setWord} handleSubmit={handleSearchSubmit} />
-      {!!images.length && <ImageCard image={images[0]} />}
+      <ImageCard></ImageCard>
     </div>
   );
 };
