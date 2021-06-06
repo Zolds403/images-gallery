@@ -10,8 +10,6 @@ const App = () => {
   const [word, setWord] = useState('');
   const [images, setImages] = useState([]);
 
-  console.log(images);
-
   const handleSearchSubmit = (e) => {
     e.preventDefault();
 
@@ -22,6 +20,7 @@ const App = () => {
       .then((res) => res.json())
       .then((data) => {
         setImages([data, ...images]);
+        console.log(images);
       })
       .catch((err) => {
         console.log(err);
