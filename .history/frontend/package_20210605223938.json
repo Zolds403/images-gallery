@@ -17,9 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint './src/**/*.{js,jsx}'",
-    "lint.-fix": "eslint './src/**/*.{js,jsx}' --fix"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -29,11 +27,8 @@
     ]
   },
   "prettier": {
-    "singleQuote": true
-  }, 
-  "jshint.options": {
-    "esversion": 8
-  },
+    "singleQoute": true
+},
   "browserslist": {
     "production": [
       ">0.2%",

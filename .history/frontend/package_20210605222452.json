@@ -17,9 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint './src/**/*.{js,jsx}'",
-    "lint.-fix": "eslint './src/**/*.{js,jsx}' --fix"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -27,12 +25,6 @@
       "react-app/jest",
       "plugin:prettier/recommended"
     ]
-  },
-  "prettier": {
-    "singleQuote": true
-  }, 
-  "jshint.options": {
-    "esversion": 8
   },
   "browserslist": {
     "production": [

@@ -1,4 +1,3 @@
-//jshint esversion:6
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
@@ -35,4 +34,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App

@@ -1,4 +1,4 @@
-//jshint esversion:6
+//jshint esversion: 8
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
@@ -9,3 +9,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
