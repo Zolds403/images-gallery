@@ -5,7 +5,7 @@ import { Navbar, Container } from 'react-bootstrap';
 import { ReactComponent as Logo } from '../images/logo.svg';
 
 const navBarStyle = {
-  backgroundColor: 'black',
+  backgroundColor: '#eeeeee',
 };
 
 const Header = (props) => {
