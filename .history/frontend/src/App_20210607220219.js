@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Search from './components/Search';
 import ImageCard from './components/ImageCard';
-import Welcome from './components/Welcome';
+import Welcome from '.components/Welcome';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const UNSPLASH_KEY = process.env.REACT_APP_UNSPLASH_KEY;
