@@ -7,11 +7,13 @@ import ImageCard from './components/ImageCard';
 import Welcome from './components/Welcome';
 import { Container, Row, Col } from 'react-bootstrap';
 
-const API_URL = process.env.REACT_APP_API_URL || 'https://127.0.0.1:5050';
+const API_URL = process.env.API_URL || 'https://127.0.0.1:5050';
 
 const App = () => {
   const [word, setWord] = useState('');
   const [images, setImages] = useState([]);
+
+  console.log(images);
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
