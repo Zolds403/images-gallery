@@ -30,7 +30,7 @@
   },
   "prettier": {
     "singleQuote": true
-  }, 
+  },
   "jshint.options": {
     "esversion": 8
   },
