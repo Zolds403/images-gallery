@@ -22,7 +22,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: very-strong-db-password
     volumes:
-      - mongodb_data:/data/db
+      mongodb_data: /data/db
   mongo-express:
     image: mongo-express
     restart: always
@@ -35,4 +35,4 @@ services:
     depends_on:
       - mongo
 volumes:
-  mongodb_data:
+  - mongodb_data
